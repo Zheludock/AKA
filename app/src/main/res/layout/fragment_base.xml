@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.base.BaseFragment">
+
+    <LinearLayout
+        android:id="@+id/container_for_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/buttonMagic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/bg_magic"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Магия"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttonPlaces"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_places"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMagic"
+            tools:layout_editor_absoluteX="33dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Места"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40sp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttonPersonage"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_npc"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPlaces">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Существа"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttonArtefacts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_artifact"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPersonage">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Артефакты"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
