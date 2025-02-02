@@ -31,4 +31,24 @@
         android:name="com.example.aka.StubFragment"
         tools:layout="@layout/fragment_stub" />
 
+    <fragment
+        android:id="@+id/navigation_elements"
+        android:name="com.example.aka.ElementListFragment"
+        tools:layout="@layout/fragment_element_list">
+        <action
+            android:id="@+id/action_elementListFragment_to_accordionFragment"
+            app:destination="@id/navigation_spells_fragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_spells_fragment"
+        android:name="com.example.aka.SpellsFragment"
+        android:label="Accordion"
+        tools:layout="@layout/fragment_spells">
+        <argument
+            android:name="jsonResId"
+            app:argType="integer"/>
+    </fragment>
+
 </navigation>

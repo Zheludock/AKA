@@ -22,7 +22,7 @@ class BaseFragment : Fragment() {
         val view = binding.root
 
         binding.buttonMagic.setOnClickListener {
-            findNavController().navigate(R.id.navigation_stub)
+            findNavController().navigate(R.id.navigation_elements)
         }
 
         binding.buttonPlaces.setOnClickListener {
