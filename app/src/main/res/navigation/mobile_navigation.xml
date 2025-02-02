@@ -7,26 +7,28 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.arkenkharapp.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:name="com.example.aka.ui.home.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_base"
-        android:name="com.example.arkenkharapp.ui.base.BaseFragment"
-        android:label="@string/title_base"
-        tools:layout="@layout/fragment_base" />
+        android:name="com.example.aka.ui.base.BaseFragment"
+        tools:layout="@layout/fragment_base" >
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_play"
-        android:name="com.example.arkenkharapp.ui.play.PlayFragment"
-        android:label="@string/title_play"
+        android:name="com.example.aka.ui.play.PlayFragment"
         tools:layout="@layout/fragment_play" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.arkenkharapp.ui.profile.ProfileFragment"
-        android:label="@string/title_profile"
+        android:name="com.example.aka.ui.profile.ProfileFragment"
         tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_stub"
+        android:name="com.example.aka.StubFragment"
+        tools:layout="@layout/fragment_stub" />
 
 </navigation>

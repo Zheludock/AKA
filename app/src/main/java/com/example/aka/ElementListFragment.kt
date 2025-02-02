@@ -1,20 +1,19 @@
-package com.example.aka.ui.profile
+package com.example.aka
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.aka.databinding.FragmentProfileBinding
+import com.example.aka.databinding.FragmentElementListBinding
+import com.example.aka.databinding.FragmentPlayBinding
 
-class ProfileFragment : Fragment() {
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 
-    private var _binding: FragmentProfileBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+class ElementListFragment : Fragment() {
+    private var _binding: FragmentElementListBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,8 +21,7 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentElementListBinding.inflate(inflater, container, false)
         val view = binding.root
 
         return view

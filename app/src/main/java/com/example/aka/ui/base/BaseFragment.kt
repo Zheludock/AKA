@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.aka.R
 import com.example.aka.databinding.FragmentBaseBinding
 
 class BaseFragment : Fragment() {
@@ -19,25 +21,20 @@ class BaseFragment : Fragment() {
         _binding = FragmentBaseBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // Access your views using binding
-        binding.containerForButton.setOnClickListener {
-            // Handle click on containerForButton
-        }
-
         binding.buttonMagic.setOnClickListener {
-            // Handle click on buttonMagic
+            findNavController().navigate(R.id.navigation_stub)
         }
 
         binding.buttonPlaces.setOnClickListener {
-            // Handle click on buttonPlaces
+            findNavController().navigate(R.id.navigation_stub)
         }
 
         binding.buttonPersonage.setOnClickListener {
-            // Handle click on buttonPersonage
+            findNavController().navigate(R.id.navigation_stub)
         }
 
         binding.buttonArtefacts.setOnClickListener {
-            // Handle click on buttonArtefacts
+            findNavController().navigate(R.id.navigation_stub)
         }
 
         return view

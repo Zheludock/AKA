@@ -4,21 +4,21 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_main"
-        android:title="@string/title_home" />
+        android:title="Главная" />
 
     <item
         android:id="@+id/navigation_base"
         android:icon="@drawable/ic_book"
-        android:title="@string/title_base" />
+        android:title="База знаний" />
 
     <item
         android:id="@+id/navigation_play"
         android:icon="@drawable/ic_play"
-        android:title="@string/title_play" />
+        android:title="Игровая" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile"
-        android:title="@string/title_profile" />
+        android:title="Профиль" />
 
 </menu>
