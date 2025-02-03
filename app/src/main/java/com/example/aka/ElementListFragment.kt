@@ -21,6 +21,9 @@ class ElementListFragment : Fragment() {
     ): View {
         _binding = FragmentElementListBinding.inflate(inflater, container, false)
         val view = binding.root
+        binding.btnBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
 
         val imageJsonMap = mapOf(
             R.id.fire to R.raw.fire,

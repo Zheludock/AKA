@@ -14,6 +14,9 @@
         android:id="@+id/navigation_base"
         android:name="com.example.aka.ui.base.BaseFragment"
         tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_main_to_slider"
+            app:destination="@id/navigation_places_slider"/>
     </fragment>
 
     <fragment
@@ -44,11 +47,16 @@
     <fragment
         android:id="@+id/navigation_spells_fragment"
         android:name="com.example.aka.SpellsFragment"
-        android:label="Accordion"
         tools:layout="@layout/fragment_spells">
         <argument
             android:name="jsonResId"
             app:argType="integer"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_places_slider"
+        android:name="com.example.aka.PlacesSliderFragment"
+        android:layout="@layout/fragment_places_slider">
     </fragment>
 
 </navigation>

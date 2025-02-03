@@ -1,10 +1,11 @@
-package com.example.aka
+package com.example.aka.items
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.aka.R
 
 class AccordionAdapter(
     private val items: List<AccordionItem>

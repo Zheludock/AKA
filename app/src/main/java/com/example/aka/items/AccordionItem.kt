@@ -1,4 +1,4 @@
-package com.example.aka
+package com.example.aka.items
 
 data class AccordionItem(
     val name: String,

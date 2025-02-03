@@ -26,7 +26,7 @@ class BaseFragment : Fragment() {
         }
 
         binding.buttonPlaces.setOnClickListener {
-            findNavController().navigate(R.id.navigation_stub)
+            findNavController().navigate(R.id.navigation_places_slider)
         }
 
         binding.buttonPersonage.setOnClickListener {

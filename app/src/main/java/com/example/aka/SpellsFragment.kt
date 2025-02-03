@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.aka.databinding.FragmentSpellsBinding
+import com.example.aka.items.AccordionAdapter
+import com.example.aka.items.AccordionItem
 import org.json.JSONArray
 
 class SpellsFragment : Fragment() {
@@ -19,6 +22,9 @@ class SpellsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSpellsBinding.inflate(inflater, container, false)
+        binding.btnBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
         return binding.root
     }
 
