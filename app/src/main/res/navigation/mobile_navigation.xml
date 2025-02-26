@@ -59,4 +59,9 @@
         android:layout="@layout/fragment_places_slider">
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_charlist"
+        android:name="com.example.aka.CharlistFragment"
+        tools:layout="@layout/fragment_charlist" />
+
 </navigation>

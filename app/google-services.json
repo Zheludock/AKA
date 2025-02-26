@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147302641044",
+    "project_id": "arkenkharapp-847afc82",
+    "storage_bucket": "arkenkharapp-847afc82.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147302641044:android:69f5e0e23937de3030f381",
+        "android_client_info": {
+          "package_name": "com.example.aka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHYMxZ6U5cKETneP35N1mRWGoI5EjolE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

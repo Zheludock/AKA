@@ -37,3 +37,9 @@ class AccordionAdapter(
 
     override fun getItemCount() = items.size
 }
+
+data class AccordionItem(
+    val name: String,
+    val description: String,
+    var isExpanded: Boolean = false
+)

@@ -34,3 +34,9 @@ class SliderAdapter(
 
     override fun getItemCount(): Int = items.size
 }
+
+data class SlideItem(
+    val imageRes: Int,  // ID ресурса изображения
+    val caption: String, // Текст подписи
+    val description: String
+)

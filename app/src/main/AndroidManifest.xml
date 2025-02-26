@@ -10,12 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AKA"
+        android:theme="@style/SplashTheme"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.aka.MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="Arken-Khar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

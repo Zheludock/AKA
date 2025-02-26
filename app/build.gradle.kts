@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -39,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation(platform(libs.firebase.bom))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -50,6 +51,9 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.dotsindicator)
     implementation(libs.androidx.viewpager2)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.legacy.support.v4)
+    implementation(libs.androidx.recyclerview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
